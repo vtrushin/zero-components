@@ -1,13 +1,13 @@
 {
   "name": "zero-components",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "author": "Vlad Trushin",
   "description": "Zero components",
   "main": "build.js",
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w",
-    "prepublishOnly": "npm run build"
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
