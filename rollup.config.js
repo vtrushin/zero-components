@@ -5,9 +5,9 @@ import babel from 'rollup-plugin-babel';
 import multiInput from 'rollup-plugin-multi-input'
 
 export default {
-	input: 'lib/*.js',
+	input: 'src/*.js',
 	output: {
-		dir: 'dist',
+		dir: 'lib',
 		format: 'cjs',
 		globals: {
 			react: 'React'
@@ -25,7 +25,7 @@ export default {
 		commonjs(),
 	],
 	watch: {
-		include: 'lib/**/*.js',
+		include: 'src/**/*.js',
 		exclude: 'node_modules/**'
 	},
 }

@@ -12,6 +12,9 @@
     "watch": "rollup -c -w",
     "prepare": "npm run build"
   },
+  "files": [
+    "./lib"
+  ],
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
