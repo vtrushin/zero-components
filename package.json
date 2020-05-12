@@ -3,7 +3,10 @@
   "version": "0.0.11",
   "author": "Vlad Trushin",
   "description": "Zero components",
-  "main": "build.js",
+  "exports": {
+    ".": "./dist/build.js",
+    "./": "./dist/"
+  },
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w",
